@@ -15,8 +15,7 @@ import {
  
 } from "react-native";
 import { Card, TextInput } from "react-native-paper";
-// import { MaterialCommunityIcons } from "@expo/vector-icons";
-// import { MaterialIcons } from "@expo/vector-icons";
+
 import SearchBar from "../components/SearchBar";
 import { MaterialCommunityIcons } from '@expo/vector-icons';
 import { Entypo } from '@expo/vector-icons';
