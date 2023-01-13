@@ -1,8 +1,8 @@
 // import firebase from 'firebase/compat/app';
 // import 'firebase/compat/auth';
 // import 'firebase/compat/firestore';
-// import { initializeApp } from "firebase/app";
-// import {getAuth} from "firebase/auth"
+
+import {getAuth} from "firebase/auth"
 import { initializeApp } from 'firebase/app';
   import { getFirestore } from 'firebase/firestore'
 import * as firebase from "firebase/app";
@@ -18,13 +18,7 @@ const firebaseConfig = {
     measurementId: "G-RJ4NCN0XCL"
   };
 
-//   if(!firebase.apps.length===1){
-//     firebase.initializeApp(firebaseConfig);
-//   }
 
-//   export {firebase};
-// const app = initializeApp(firebaseConfig);
-// export const auth =getAuth(app);
 
 if (!firebase.length) {
     firebase.initializeApp(firebaseConfig);
@@ -32,12 +26,11 @@ if (!firebase.length) {
 
   export {firebase};
   
-  
-  // TODO: Replace the following with your app's Firebase project configuration
+
   
   
   export const app = initializeApp(firebaseConfig);
-  // MARK: Firestore Reference
+
   export const db = getFirestore(app);
 
   
