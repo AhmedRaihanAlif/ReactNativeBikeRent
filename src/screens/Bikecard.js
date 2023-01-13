@@ -1,20 +1,15 @@
 import React, { useState } from "react";
-
-import { deleteDoc, doc, getDoc, setDoc } from "firebase/firestore";
-import { db } from "../Firebase/config";
 import {
   View,
   Text,
   StyleSheet,
   FlatList,
   Button,
-  Image,
-  TouchableOpacity,
+   TouchableOpacity,
   ImageBackground,
 } from "react-native";
 import { Card } from "react-native-paper";
-import { MaterialCommunityIcons } from "@expo/vector-icons";
-import { MaterialIcons } from "@expo/vector-icons";
+
 import SearchBar from "../components/SearchBar";
 
 const image = {
@@ -127,9 +122,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: "blue",
-    // alignItems: 'center',
-    // justifyContent: 'center',
-    // paddingTop:40
+  
   },
   cont: {
     marginBottom: 30,
