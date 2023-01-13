@@ -1,7 +1,6 @@
 import React, { useState } from "react";
-import { db } from "../Firebase/config";
 
-import { collection, getDocs } from "firebase/firestore";
+
 import {
   View,
   Text,
