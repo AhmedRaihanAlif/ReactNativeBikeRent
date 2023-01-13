@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { Entypo } from "@expo/vector-icons";
-import { deleteDoc, doc, getDoc, setDoc } from "firebase/firestore";
+import { doc, getDoc, setDoc } from "firebase/firestore";
 import { db } from "../Firebase/config";
-import { collection, getDocs } from "firebase/firestore";
+
 import {
   View,
   Text,
@@ -14,8 +14,7 @@ import {
   ImageBackground,
 } from "react-native";
 import { Card } from "react-native-paper";
-import { MaterialCommunityIcons } from "@expo/vector-icons";
-import { MaterialIcons } from "@expo/vector-icons";
+
 import { Ionicons } from "@expo/vector-icons";
 
 const image = {
@@ -222,12 +221,7 @@ const Userhome = ({ navigation }) => {
               </View> */}
 
               <View>
-                {/* <Button
-                  color="#3399FF"
-                  title="Add Cart"
-                  style={{ height: 100 }}
-                  onPress={() => props.navigation.navigate("Addcart")}
-                /> */}
+               
                 <TouchableOpacity
                   style={[{ marginLeft: 10, height: 50 }]}
                   onPress={() => {
